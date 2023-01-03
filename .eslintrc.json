@@ -1,0 +1,29 @@
+{
+    "extends": [
+    "eslint:recommended", 
+    "plugin:import/errors", 
+    "plugin:react/recommended", 
+    "plugin:jsx-ally/recommended",
+    "prettier", 
+    "prettier/react"
+    ],
+    "plugins": ["react", "import", "jsx-a11y"],
+    "rules": {
+        "react/prop-types": 0, // Si realmente es necesario el tipo de datos!!! Usa typescript
+        "no-console": 1, //Warning para los console.log
+        "jsx-a11y/rule-name": 2
+    },
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true
+        }
+    }
